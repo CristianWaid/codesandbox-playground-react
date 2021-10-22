@@ -1,0 +1,8 @@
+.input-container {
+  width: fit-content;
+  align-self: center;
+}
+
+.input-inner {
+  margin: 10 px;
+}

@@ -1,5 +1,6 @@
-import { TextField } from "@material-ui/core";
+import { Paper, TextField } from "@material-ui/core";
 import React, { useState } from "react";
+import "./style.css";
 
 export const SimpleInput = ({ label }) => {
   const [input, setInput] = useState("");
@@ -9,11 +10,13 @@ export const SimpleInput = ({ label }) => {
   };
 
   return (
-    <div>
-      <div>
-        <h2>{input ? input : "..."}</h2>
-      </div>
-      <TextField label={label} value={input} onChange={handleInputChange} />
+    <div className={"input-container"}>
+      <Paper elevation={24}>
+        <div className={"input-inner"}>
+          <h2>{input ? input : "..."}</h2>
+        </div>
+        <TextField label={label} value={input} onChange={handleInputChange} />
+      </Paper>
     </div>
   );
 };
