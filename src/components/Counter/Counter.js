@@ -10,12 +10,15 @@ export const Counter = () => {
       <Paper elevation={24}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <h2>{state.count}</h2>
+            <div className={"counter-display"}>
+              <h2>{state.count}</h2>
+            </div>
           </Grid>
           <Grid item xs={12}>
             <ButtonGroup>
               <Button
                 onClick={() => dispatch({ type: COUNTER_ACTION.DECREMENT })}
+                disabled={state.count === 0}
               >
                 -
               </Button>

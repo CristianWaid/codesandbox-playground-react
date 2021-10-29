@@ -14,8 +14,8 @@ export const SimpleInput = ({ label }) => {
       <Paper elevation={24}>
         <div className={"input-inner"}>
           <h2>{input ? input : "..."}</h2>
+          <TextField label={label} value={input} onChange={handleInputChange} />
         </div>
-        <TextField label={label} value={input} onChange={handleInputChange} />
       </Paper>
     </div>
   );

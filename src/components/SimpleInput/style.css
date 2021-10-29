@@ -1,8 +1,9 @@
 .input-container {
   width: fit-content;
   align-self: center;
+  min-width: 50%;
 }
 
 .input-inner {
-  margin: 10 px;
+  padding: 4em;
 }

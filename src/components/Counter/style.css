@@ -3,3 +3,7 @@
   width: fit-content;
   align-self: center;
 }
+
+.counter-display {
+  min-width: 4em;
+}
